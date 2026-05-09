@@ -1,519 +1,917 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en"> 
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mrinmoy Das — Solution Architect</title>
+  <meta name="description" content="Mrinmoy Das — Solution Architect, System Engineer and Developer. Building scalable, resilient systems from code to cloud.">
+  <meta name="author" content="Mrinmoy Das">
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Mrinmoy Das</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="css/modern.css">
 </head>
-
 <body>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
+<!-- ===== NAV ===== -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">md<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#certificates">Certs</a></li>
+    <li><a href="#quotes">Quotes</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
 
-      <nav id="nav-wrap">
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="hero-tag-dot"></span>
+      Open to Opportunities
+    </div>
+    <h1 class="hero-name">
+      Mrinmoy<br><span class="highlight">Das</span>
+    </h1>
+    <div class="hero-role">
+      I'm a <span class="typing" id="typingText"></span>
+    </div>
+    <div class="hero-desc">
+      <p class="hero-tagline">Logic over syntax. Strategy over stack.</p>
+      <p>
+        I am an architect of software flow, bridging the gap between application logic and
+        cloud deployment. I don't just build features; I engineer solutions. Specializing in
+        scalability and disaster recovery, I design systems built to survive and thrive under pressure.
+      </p>
+      <p>
+        My focus is on finding the optimal path through complex problems. I treat mistakes as
+        data points for improvement and pride myself on my ability to pivot — turning an unknown
+        challenge into a mastered solution at rapid speed.
+      </p>
+    </div>
+    <div class="hero-cta">
+      <a href="#about" class="btn btn-primary">
+        <i class="fas fa-arrow-down"></i> Explore My Work
+      </a>
+      <a href="https://drive.google.com/file/d/0B7iQUL2diUv6eEthNnAzS2xIeWVBenQ1ZVRtMF9HUWdVU3Nj/view?usp=sharing"
+         class="btn btn-secondary" target="_blank" rel="noopener">
+        <i class="fas fa-download"></i> Download CV
+      </a>
+    </div>
+  </div>
 
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#certificates">Certificates</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Quotes</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
+  <div class="hero-social">
+    <a href="https://www.linkedin.com/in/aemdeei/" target="_blank" rel="noopener" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://twitter.com/aemdeei" target="_blank" rel="noopener" title="Twitter / X">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/aemdeei/" target="_blank" rel="noopener" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/aemdeei" target="_blank" rel="noopener" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://wa.me/918017562107" target="_blank" rel="noopener" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
 
-      </nav> <!-- end #nav-wrap -->
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
 
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">I'm Mrinmoy Das</h1>
-            <h3>
-               I'm a 
-               <span>Solution Architect, System Engineer and a Developer.</span>
-               I expertise in converting business logics to technology.
-               From writing code to implementing deployments to managing systems —
-               creating cost-efficient and robust architectures is what I do.
-               <hr />
-               I love connecting dots!
-               <hr />
-               I design and maintain a software development cycle.
-               <hr />
-               Let's <a class="smoothscroll" href="#about">start scrolling</a>and learn more 
-               <a class="smoothscroll" href="#about">about me</a>.
-            </h3>
-            <hr />
-            <ul class="social">
-               <li><a href="https://www.facebook.com/aemdeei"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://twitter.com/aemdeei"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://wa.me/8017562107"><i class="fa fa-whatsapp"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/aemdeei/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://www.instagram.com/aemdeei/"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-         </div>
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-label">01 / Who I Am</span>
+    <h2 class="section-title">About Me</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-image-wrap reveal">
+      <div class="about-image-frame">
+        <img src="images/profilepic.png" alt="Mrinmoy Das — Solution Architect">
       </div>
+      <div class="about-image-border"></div>
+      <div class="about-badge">
+        <div class="about-badge-icon"><i class="fas fa-code"></i></div>
+        <div class="about-badge-text">
+          <strong>8+</strong>
+          <span>Years of Experience</span>
+        </div>
+      </div>
+    </div>
 
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+    <div class="about-content reveal">
+      <h2>Senior Engineering Manager<br>&amp; Solution Architect</h2>
+      <p>
+        Currently leading Platforms at Bhanzu — building the monitoring, communication,
+        and payments infrastructure that powers a global edtech organisation. Previously
+        spent 4+ years at BDI Plus as Senior Architect, designing enterprise solutions
+        for Life Insurance customers across the globe.
+      </p>
+      <p>
+        I maintain the full software development lifecycle — from architecture decisions
+        and cloud strategy to hands-on code, CI/CD pipelines, and team leadership.
+        I thrive on converting complex business requirements into elegant, resilient systems.
       </p>
 
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p>I am at a point of my career where I believe building logic is way more important than grasping different technologies. A simple Google query or StackOverflow does that for you. "What are the technologies you've worked in?" - is a question that is difficult for me to answer.<br/><br/>
-               Love connecting dots! From application to deployment to cloud - I am a maintainer of software development flow. Providing solutions for highly scalable and disaster recovery enabled systems. I believe, nothing is hard enough to be learned.<br/><br/>
-               Making mistakes has never put me down. I might not know something this moment, but on the very next, I might be an expert of it! 
-            </p>
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Permanent Address</h2>
-                  <p class="address">
-						   <span>Nabajiban Colony, <br>Bisharpara,<br>
-						         PS - Birati, Kolkata - 700051
-                     </span><br>
-						   <span>+91-8017562107</span><br>
-                     <span>mrinmoydas3011@gmail.com</span>
-					   </p>
-
-               </div>
-
-               <div class="columns contact-details">
-
-                  <h2>Current Address</h2>
-                  <p class="address">
-                     <span>Vinayak Nagar, K R Garden,<br>
-                           Murgesh Pallya, Bengaluru,<br> Karnataka - 560017
-                     </span><br>
-                     <span>+91-8017562107</span><br>
-                     <span>mrinmoydas3011@gmail.com</span>
-                  </p>
-   
-               </div>
-
-            </div> <!-- end row -->
-
-            <div class="columns download">
-               <p>
-                  <a href="https://drive.google.com/file/d/0B7iQUL2diUv6eEthNnAzS2xIeWVBenQ1ZVRtMF9HUWdVU3Nj/view?usp=sharing" class="button"><i class="fa fa-download"></i>Download Resume</a>
-               </p>
-            </div>
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Narula Institute of Technology</h3>
-                  <p class="info">Bachelor in Computer Science and Engineering<span>&bull;</span> <em class="date">June 2017</em></p>
-
-                  <p>
-                  Completed Computer Science Engineering (CSE) from Narula Institute of Technology under Maulana Abul Kalam Azad 
-				  University of Technology (MAKAUT), formerly known as West Bengal University of Technology (WBUT), batch 2013-17 with excellence.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Julien Day School</h3>
-                  <p class="info">Completed ISC<span>&bull;</span> <em class="date">March 2013</em></p>
-
-                  <p>
-                  Completed ISC with 83.25% from Julien Day School, Ganganagar under Council of Indian School Certificate Examination (CISCE).
-                  </p>
-
-               </div>
-			   
-			   <div class="twelve columns">
-
-                  <h3>Julien Day School</h3>
-                  <p class="info">Completed ICSE <span>&bull;</span> <em class="date">March 2011</em></p>
-
-                  <p>
-                  Completed ICSE with 93.29% from Julien Day School, Ganganagar under Council of Indian School Certificate Examination (CISCE).
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Student Management System</h3>
-                  <p class="info">A software to make college work easy<span>&bull;</span> <em class="date">June 2014 - Present</em></p>
-
-                  <p>
-                  Developing a web-based application to make college based activities like routine creation on basis of department, keeping attendance of 
-				  both students and teachers and assigning tests and assessments easy for college faculty.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Personal Website Development</h3>
-                  <p class="info">Showcasing my talent and lifestyle<span>&bull;</span> <em class="date">December 2014 - Present</em></p>
-
-                  <p>
-                  A resume does not define a true personality. To highlight my adventures and interests, developing a website to let the world know about my
-				  interests.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>Trained in Java Standard Edition (J2SE) in 2015 from Hewlett-Packard Enterprise.<br>
-					Trained in Java Enterprise Edition (J2EE) including Java Server Pages (JSP) with Struts Framework in 2015 from Hewlett-Packard Enterprise.<br>
-					Trained in Cisco Certified Network Associate (CCNA) in 2016 from Indian School of Ethical Hacking (ISOEH), Kolkata. <br> 
-					Programming skills in Java (J2SE), J2EE with Struts Framework, C, C++, PHP, HTML, JSP, MySQL Database, Oracle Database, Data Structure, Database Management System and Networking.
-            </p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand photoshop"></span><em>C</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>JSP</em></li>
-						<li><span class="bar-expand wordpress"></span><em>PHP</em></li>
-						<li><span class="bar-expand css"></span><em>Java</em></li>
-						<li><span class="bar-expand html5"></span><em>C++</em></li>
-                  <li><span class="bar-expand jquery"></span><em>CCNA</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-	<!-- Certificate Section -->
-		<section id="certificates">
-			<!-- Certificates
-      ----------------------------------------------- -->
-	  <br>
-	  <br>
-      <div class="row education">
-		<div class="three columns header-col">
-            <h1><span>Certificates</span></h1>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-number" data-target="8">0</span>
+          <span class="stat-label">Years Exp.</span>
         </div>
-        <div class="nine columns main-col">
-            <div class="row item">
-                <div class="twelve columns">
-					<h3>July 2015</h3>
-						<img src="images/J2SE.jpg" style="width:400px;height:300px">
-				</div>
-			</div>
-			<div class="row item">
-				<div class="twelve columns">
-					<h3>August 2015</h3>
-						<img src="images/EH.jpg" style="width:300px;height:400px">
-				</div>
-			</div>
-			<div class="row item">
-				<div class="twelve columns">
-					<h3>December 2015</h3>
-						<img src="images/J2EE.jpg" style="width:400px;height:300px">
-				</div>
-			</div>
-			<div class="row item">
-				<div class="twelve columns">
-					<h3>July 2016</h3>
-						<img src="images/CCNA.jpg" style="width:400px;height:300px">
-			</div>
-			</div>
-			<div class="row item">
-				<div class="twelve columns">
-					<h3>April 2017</h3>
-						<img src="images/PYTHON.jpg" style="width:400px;height:300px">
-				</div>
-			</div>
-			
-			</div>
-		</div>
-		</section>
-	<!-- Certificate section end -->
-
-
-
-
-   <!-- Testimonials Section-->
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Quotes</span></h1>
-
-            </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>If you are born poor its not your mistake, but if you die poor its your mistake.
-                           </p>
-                           <cite>Bill Gates</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-       </div>  <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-         <div class="row section-head">
-
-            <div class="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
-            </div>
-
-            <div class="ten columns">
-
-                  <p class="lead">Want to drop me a message? Submit here without any wait!
-                  </p>
-
-            </div>
-
-         </div>
-
-         <div class="row">
-
-            <div class="eight columns">
-
-               <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-						<iframe src="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfUBsFhHIswre_v89ZOlRGu0Oo0zvCPM4Q9jbKsdahzUMQaXw/viewform?embedded=true" width="640" height="698" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
-		       </fieldset>
-				   </form> <!-- Form End -->
-
-               
-               <div id="message-warning"> Error boy</div>
-               
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
-            </div>
-
-
-            <aside class="four columns footer-widgets">
-
-               <div class="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
-					   <p class="address">
-						   Mrinmoy Das<br>
-						   Nabajiban Colony, Bisharpara,<br>
-						   PS - Birati, Kolkata - 700051<br>
-						   <span>+91-8017562107</span>
-					   </p>
-
-				   </div>
-
-               <div class="widget widget_tweets">
-
-                  <h4 class="widget-title">Latest Tweets</h4>
-
-                  <ul id="twitter">
-                     <li>
-                        <span>
-				
-				<a class="twitter-timeline" href="https://twitter.com/mrinmoydascoder" data-height="482">Tweets by mrinmoydascoder</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </span>
-                        
-                  </ul>
-
-		         </div>
-
-            </aside>
-
+        <div class="stat-card">
+          <span class="stat-number" data-target="4">0</span>
+          <span class="stat-label">Companies</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="20">0</span>
+          <span class="stat-label">Team Lead</span>
+        </div>
       </div>
 
-   </section> <!-- Contact Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="https://www.facebook.com/mrinmoydastheprogrammer"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://twitter.com/mrinmoydascoder"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://plus.google.com/+MrinmoyDasCoder"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/mrinmoydastheprogrammer/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://www.instagram.com/mrinmoydastheprogrammer/?hl=en"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>Designed by Mrinmoy Das </li>   
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
+      <div class="about-info">
+        <div class="info-item">
+          <span class="info-label">Current City</span>
+          <span class="info-value">Bengaluru, India — 560066</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Email</span>
+          <span class="info-value">mrinmoydas3011@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Phone</span>
+          <span class="info-value">+91-8017562107</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Hometown</span>
+          <span class="info-value">Kolkata, West Bengal</span>
+        </div>
       </div>
 
-   </footer> <!-- Footer End-->
+      <a href="https://drive.google.com/file/d/0B7iQUL2diUv6eEthNnAzS2xIeWVBenQ1ZVRtMF9HUWdVU3Nj/view?usp=sharing"
+         class="btn btn-primary" target="_blank" rel="noopener">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+  </div>
+</section>
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<!-- ===== RESUME ===== -->
+<section id="resume">
+  <div class="section-header reveal">
+    <span class="section-label">02 / My Journey</span>
+    <h2 class="section-title">Resume</h2>
+    <div class="section-line"></div>
+  </div>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+  <div class="resume-grid">
+    <!-- Education -->
+    <div>
+      <div class="timeline-header reveal">
+        <div class="timeline-header-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Education</h3>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">2013 — 2017</div>
+          <div class="timeline-title">B.E. Computer Science &amp; Engineering</div>
+          <div class="timeline-org">Narula Institute of Technology · MAKAUT</div>
+          <div class="timeline-desc">
+            Completed CSE with excellence under Maulana Abul Kalam Azad University of Technology
+            (formerly WBUT), Kolkata. Batch 2013–17.
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">March 2013</div>
+          <div class="timeline-title">ISC · 83.25%</div>
+          <div class="timeline-org">Julien Day School, Ganganagar · CISCE</div>
+          <div class="timeline-desc">
+            Completed Indian School Certificate examination with distinction.
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">March 2011</div>
+          <div class="timeline-title">ICSE · 93.29%</div>
+          <div class="timeline-org">Julien Day School, Ganganagar · CISCE</div>
+          <div class="timeline-desc">
+            Completed ICSE with outstanding 93.29% aggregate.
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Experience -->
+    <div>
+      <div class="timeline-header reveal">
+        <div class="timeline-header-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Experience</h3>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Oct 2022 — Present</div>
+          <div class="timeline-title">Senior Engineering Manager — Platforms</div>
+          <div class="timeline-org">Bhanzu (Exploring Infinities Edtech Pvt Ltd) · Bengaluru</div>
+          <div class="timeline-desc">
+            Leading Platforms: built a unified microservice monitoring layer (Python package → Grafana),
+            a multi-channel Communication Platform (AWS SES, Pinpoint, WhatsApp/Meta, APNS, Slack),
+            the org's first in-house payment system integrating 11 gateways globally (Razorpay, Stripe, Tabby),
+            an AI-based QC system for session quality, and a refund automation tool that cut processing
+            from days to minutes. Also led vendor partnerships including AWS and Razorpay.
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Jul 2018 — Oct 2022</div>
+          <div class="timeline-title">Senior Architect — Enterprise Solution</div>
+          <div class="timeline-org">BDI Plus Pvt Ltd · Bengaluru</div>
+          <div class="timeline-desc">
+            Led teams of 20+ across dev, QA, DevOps and BAs. Delivered a standout API Gateway
+            for Life Insurance products (OneDigital Plus, OneData Plus). Designed microservice
+            architecture on AWS/GCP/Azure, implemented CI/CD with auto-scans, SOC II &amp; PII
+            compliance, Big Data processing at US-population scale with PySpark, and payment
+            integrations with CyberSource and OneInc. Global Technical &amp; Platform Lead for Afficiency.
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Feb 2018 — Jun 2018</div>
+          <div class="timeline-title">Full Stack Developer — Front-end Lead</div>
+          <div class="timeline-org">IoT Research Labs · Hyderabad</div>
+          <div class="timeline-desc">
+            Led frontend team building an IoT data visualisation platform from scratch.
+            Consumed Python Eve / MongoDB APIs and rendered real-time maps with LeafletJS.
+            Stack: ReactJS, Redux, VanillaJS, React Native, Webpack.
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Oct 2017 — Jan 2018</div>
+          <div class="timeline-title">Full Stack Developer</div>
+          <div class="timeline-org">Finoramic Inc · Hyderabad</div>
+          <div class="timeline-desc">
+            Full-stack development on a fintech platform from scratch. Frontend-focused,
+            connecting Parse Server + MongoDB to an interactive ReactJS/React Native UI.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="skills-section">
+    <div class="section-header reveal" style="margin-bottom: 48px;">
+      <span class="section-label">Technical Proficiency</span>
+      <h2 class="section-title" style="font-size: clamp(1.8rem, 3.5vw, 2.4rem);">Skills &amp; Expertise</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <div class="skill-cat-title">// Languages &amp; Frameworks</div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Python (Flask / PySpark)</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">JavaScript / VanillaJS / ReactJS</span><span class="skill-pct">88%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Java (Spring Boot)</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Go / NodeJS</span><span class="skill-pct">78%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-title">// Cloud &amp; DevOps</div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">AWS (SES, Pinpoint, EC2…)</span><span class="skill-pct">92%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">GCP / Azure / Digital Ocean</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Docker / Kubernetes</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Jenkins / GitLab CI · CD</span><span class="skill-pct">83%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="83"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-title">// Data &amp; Architecture</div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">MySQL / PostgreSQL / Redis</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">MongoDB / Big Data / PySpark</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Microservice Architecture</span><span class="skill-pct">92%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">nGinx / HA Proxy / API Gateway</span><span class="skill-pct">87%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="87"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATES ===== -->
+<section id="certificates">
+  <div class="section-header reveal">
+    <span class="section-label">03 / Credentials</span>
+    <h2 class="section-title">Certificates</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="certs-grid">
+    <div class="cert-card" data-img="images/J2SE.jpg">
+      <div class="cert-img-wrap">
+        <img src="images/J2SE.jpg" alt="Java SE Certificate" loading="lazy">
+        <div class="cert-overlay">
+          <div class="cert-overlay-icon"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+      <div class="cert-info">
+        <div class="cert-date">July 2015</div>
+        <div class="cert-name">Java Standard Edition (J2SE)</div>
+        <div class="cert-issuer">Hewlett-Packard Enterprise</div>
+      </div>
+    </div>
+
+    <div class="cert-card" data-img="images/EH.jpg">
+      <div class="cert-img-wrap">
+        <img src="images/EH.jpg" alt="Ethical Hacking Certificate" loading="lazy">
+        <div class="cert-overlay">
+          <div class="cert-overlay-icon"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+      <div class="cert-info">
+        <div class="cert-date">August 2015</div>
+        <div class="cert-name">Ethical Hacking</div>
+        <div class="cert-issuer">Indian School of Ethical Hacking (ISOEH)</div>
+      </div>
+    </div>
+
+    <div class="cert-card" data-img="images/J2EE.jpg">
+      <div class="cert-img-wrap">
+        <img src="images/J2EE.jpg" alt="Java EE Certificate" loading="lazy">
+        <div class="cert-overlay">
+          <div class="cert-overlay-icon"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+      <div class="cert-info">
+        <div class="cert-date">December 2015</div>
+        <div class="cert-name">Java Enterprise Edition (J2EE) with Struts</div>
+        <div class="cert-issuer">Hewlett-Packard Enterprise</div>
+      </div>
+    </div>
+
+    <div class="cert-card" data-img="images/CCNA.jpg">
+      <div class="cert-img-wrap">
+        <img src="images/CCNA.jpg" alt="CCNA Certificate" loading="lazy">
+        <div class="cert-overlay">
+          <div class="cert-overlay-icon"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+      <div class="cert-info">
+        <div class="cert-date">July 2016</div>
+        <div class="cert-name">Cisco Certified Network Associate (CCNA)</div>
+        <div class="cert-issuer">Indian School of Ethical Hacking (ISOEH)</div>
+      </div>
+    </div>
+
+    <div class="cert-card" data-img="images/PYTHON.jpg">
+      <div class="cert-img-wrap">
+        <img src="images/PYTHON.jpg" alt="Python Certificate" loading="lazy">
+        <div class="cert-overlay">
+          <div class="cert-overlay-icon"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+      <div class="cert-info">
+        <div class="cert-date">April 2017</div>
+        <div class="cert-name">Python Programming</div>
+        <div class="cert-issuer">Certification Authority</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+  <img src="" alt="Certificate" id="lightboxImg">
+  <div class="lightbox-close" id="lightboxClose" role="button" aria-label="Close">
+    <i class="fas fa-times"></i>
+  </div>
+</div>
+
+<!-- ===== QUOTES ===== -->
+<section id="quotes">
+  <div class="section-header reveal">
+    <span class="section-label">04 / Inspiration</span>
+    <h2 class="section-title">Quotes I Live By</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="quotes-wrapper">
+    <div class="quotes-inner">
+      <div class="quote-slide active">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="quote-text">
+          Your work is going to fill a large part of your life, and the only way to be truly
+          satisfied is to do what you believe is great work. And the only way to do great
+          work is to love what you do. If you haven't found it yet, keep looking. Don't settle.
+        </p>
+        <div class="quote-author">— Steve Jobs</div>
+      </div>
+
+      <div class="quote-slide">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="quote-text">
+          If you are born poor it's not your mistake, but if you die poor it's your mistake.
+        </p>
+        <div class="quote-author">— Bill Gates</div>
+      </div>
+
+      <div class="quote-slide">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="quote-text">
+          The best way to predict the future is to invent it.
+        </p>
+        <div class="quote-author">— Alan Kay</div>
+      </div>
+
+      <div class="quote-slide">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="quote-text">
+          Simplicity is the soul of efficiency. Any intelligent fool can make things bigger,
+          more complex and more violent. It takes a touch of genius — and a lot of courage —
+          to move in the opposite direction.
+        </p>
+        <div class="quote-author">— E.F. Schumacher</div>
+      </div>
+    </div>
+    <div class="quote-dots" id="quoteDots"></div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-label">05 / Get In Touch</span>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <h3>Let's work<br>together.</h3>
+      <p>
+        Have a project, architecture challenge, or just want to talk tech?
+        Drop me a message and I'll get back to you.
+      </p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-item-text">
+            <strong>Location</strong>
+            <span>Bengaluru, India</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-item-text">
+            <strong>Phone</strong>
+            <span>+91-8017562107</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-item-text">
+            <strong>Email</strong>
+            <span>mrinmoydas3011@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div class="contact-item-text">
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/aemdeei</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap reveal">
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">Name <span class="req">*</span></label>
+            <input type="text" id="cf-name" name="name" placeholder="Your full name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email <span class="req">*</span></label>
+            <input type="email" id="cf-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="What's this about?">
+        </div>
+        <div class="form-group">
+          <label for="cf-message">Message <span class="req">*</span></label>
+          <textarea id="cf-message" name="message" rows="6" placeholder="Tell me about your project or idea…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit-btn" id="formSubmitBtn">
+          <span class="btn-label"><i class="fas fa-paper-plane"></i> Send Message</span>
+          <span class="btn-loading" hidden><i class="fas fa-circle-notch fa-spin"></i> Sending…</span>
+        </button>
+        <div class="form-success" id="formSuccess" hidden>
+          <i class="fas fa-check-circle"></i>
+          <strong>Message sent!</strong>
+          <span>Thanks — I'll get back to you soon.</span>
+        </div>
+        <div class="form-error" id="formError" hidden>
+          <i class="fas fa-exclamation-circle"></i>
+          <span id="formErrorText">Something went wrong. Please try again.</span>
+        </div>
+      </form>
+      <!-- Hidden iframe — Google Forms submission target -->
+      <iframe name="gform-iframe" id="gform-iframe" style="display:none" aria-hidden="true"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">md<span>.</span></div>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/aemdeei/" target="_blank" rel="noopener" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://twitter.com/aemdeei" target="_blank" rel="noopener" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/aemdeei/" target="_blank" rel="noopener" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/aemdeei" target="_blank" rel="noopener" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/918017562107" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <p class="footer-text">Designed &amp; built by <a href="#hero">Mrinmoy Das</a> &mdash; 2026</p>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<div class="back-to-top" id="backToTop" role="button" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+(function () {
+  'use strict';
+
+  /* ---- PARTICLE CANVAS ---- */
+  const canvas = document.getElementById('hero-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, pts = [];
+  const N = 90, LINK = 160, ACCENT_RGB = '0,212,255';
+  let mouse = { x: W / 2, y: H / 2 };
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    mouse.x = W / 2; mouse.y = H / 2;
+  }
+
+  function Pt() {
+    this.x = Math.random() * W;
+    this.y = Math.random() * H;
+    this.vx = (Math.random() - 0.5) * 0.45;
+    this.vy = (Math.random() - 0.5) * 0.45;
+    this.r  = Math.random() * 1.8 + 0.8;
+  }
+
+  Pt.prototype.tick = function () {
+    this.x += this.vx; this.y += this.vy;
+    if (this.x < 0 || this.x > W) this.vx *= -1;
+    if (this.y < 0 || this.y > H) this.vy *= -1;
+  };
+
+  function mkPts() {
+    pts = Array.from({ length: N }, () => new Pt());
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+
+    /* Radial background */
+    const g = ctx.createRadialGradient(W * 0.5, H * 0.45, 0, W * 0.5, H * 0.45, Math.max(W, H) * 0.75);
+    g.addColorStop(0, '#0e0e1e');
+    g.addColorStop(1, '#050509');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, W, H);
+
+    /* Dots */
+    pts.forEach(p => {
+      p.tick();
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${ACCENT_RGB},0.55)`;
+      ctx.fill();
+    });
+
+    /* Lines between close pts + mouse repulsion highlight */
+    for (let i = 0; i < pts.length; i++) {
+      for (let j = i + 1; j < pts.length; j++) {
+        const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+        const d = Math.hypot(dx, dy);
+        if (d < LINK) {
+          ctx.beginPath();
+          ctx.moveTo(pts[i].x, pts[i].y);
+          ctx.lineTo(pts[j].x, pts[j].y);
+          ctx.strokeStyle = `rgba(${ACCENT_RGB},${(1 - d / LINK) * 0.28})`;
+          ctx.lineWidth = 0.6;
+          ctx.stroke();
+        }
+      }
+      /* Mouse attraction */
+      const mdx = pts[i].x - mouse.x, mdy = pts[i].y - mouse.y;
+      const md = Math.hypot(mdx, mdy);
+      if (md < 200) {
+        ctx.beginPath();
+        ctx.moveTo(pts[i].x, pts[i].y);
+        ctx.lineTo(mouse.x, mouse.y);
+        ctx.strokeStyle = `rgba(${ACCENT_RGB},${(1 - md / 200) * 0.18})`;
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+  window.addEventListener('resize', () => { resize(); mkPts(); });
+  resize(); mkPts(); draw();
+
+  /* ---- TYPING ANIMATION ---- */
+  const roles = ['Solution Architect', 'System Engineer', 'Developer', 'Problem Solver', 'Cloud Builder'];
+  const tyEl = document.getElementById('typingText');
+  let ri = 0, ci = 0, del = false;
+
+  function type() {
+    const w = roles[ri];
+    tyEl.textContent = del ? w.slice(0, --ci) : w.slice(0, ++ci);
+    if (!del && ci === w.length)  { del = true; setTimeout(type, 2000); return; }
+    if (del  && ci === 0)         { del = false; ri = (ri + 1) % roles.length; }
+    setTimeout(type, del ? 55 : 95);
+  }
+  setTimeout(type, 1200);
+
+  /* ---- NAV ---- */
+  const nav     = document.getElementById('navbar');
+  const toggle  = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navLinks');
+  const backTop = document.getElementById('backToTop');
+  const secs    = document.querySelectorAll('section[id]');
+
+  window.addEventListener('scroll', () => {
+    const sy = window.scrollY;
+    nav.classList.toggle('scrolled', sy > 60);
+    backTop.classList.toggle('show', sy > 500);
+
+    let cur = '';
+    secs.forEach(s => { if (sy >= s.offsetTop - 130) cur = s.id; });
+    navMenu.querySelectorAll('a').forEach(a =>
+      a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+  });
+
+  toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+    toggle.classList.toggle('open');
+  });
+
+  navMenu.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navMenu.classList.remove('open');
+      toggle.classList.remove('open');
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) t.scrollIntoView({ behavior: 'smooth' });
+    }));
+
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  /* ---- INTERSECTION OBSERVERS ---- */
+  function obs(selector, fn, opts) {
+    const io = new IntersectionObserver(fn, opts || { threshold: 0.15 });
+    document.querySelectorAll(selector).forEach(el => io.observe(el));
+  }
+
+  /* Reveal */
+  obs('.reveal', entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }));
+
+  /* Timeline items — staggered */
+  new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const items = e.target.querySelectorAll('.timeline-item');
+        items.forEach((it, i) => setTimeout(() => it.classList.add('visible'), i * 140));
+      }
+    });
+  }, { threshold: 0.1 }).observe(document.getElementById('resume'));
+
+  /* Skills */
+  new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const cats = document.querySelectorAll('.skill-category');
+        cats.forEach((c, i) => setTimeout(() => {
+          c.classList.add('visible');
+          c.querySelectorAll('.skill-fill').forEach(b => b.style.width = b.dataset.width + '%');
+        }, i * 160));
+      }
+    });
+  }, { threshold: 0.2 }).observe(document.querySelector('.skills-section'));
+
+  /* Cert cards */
+  obs('.cert-card', entries => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 100);
+    });
+  }, { threshold: 0.1 });
+
+  /* Counters */
+  obs('.stat-number[data-target]', entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, tgt = +el.dataset.target;
+      let n = 0, step = tgt / 45;
+      const t = setInterval(() => {
+        n = Math.min(n + step, tgt);
+        el.textContent = Math.floor(n) + '+';
+        if (n >= tgt) clearInterval(t);
+      }, 35);
+    });
+  }, { threshold: 0.6 });
+
+  /* ---- LIGHTBOX ---- */
+  const lb     = document.getElementById('lightbox');
+  const lbImg  = document.getElementById('lightboxImg');
+  const lbX    = document.getElementById('lightboxClose');
+
+  document.querySelectorAll('.cert-card').forEach(c =>
+    c.addEventListener('click', () => {
+      lbImg.src = c.dataset.img;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }));
+
+  const closeLb = () => { lb.classList.remove('open'); document.body.style.overflow = ''; };
+  lbX.addEventListener('click', closeLb);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+
+  /* ---- QUOTES CAROUSEL ---- */
+  const slides = document.querySelectorAll('.quote-slide');
+  const dotsEl = document.getElementById('quoteDots');
+  let cur = 0;
+
+  slides.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'quote-dot' + (i === 0 ? ' active' : '');
+    d.addEventListener('click', () => go(i));
+    dotsEl.appendChild(d);
+  });
+
+  function go(n) {
+    slides[cur].classList.remove('active');
+    dotsEl.children[cur].classList.remove('active');
+    cur = n;
+    slides[cur].classList.add('active');
+    dotsEl.children[cur].classList.add('active');
+  }
+
+  setInterval(() => go((cur + 1) % slides.length), 5500);
+
+  /* ---- CONTACT FORM → GOOGLE FORMS ----
+   * To wire up your entry IDs:
+   *   1. Open your Google Form → ⋮ menu → "Get pre-filled link"
+   *   2. Fill dummy values in every field, click "Get link"
+   *   3. The URL will contain entry.XXXXXXXXXX=dummy — copy each ID below.
+   */
+  const GF_URL     = 'https://docs.google.com/forms/d/e/1FAIpQLSfUBsFhHIswre_v89ZOlRGu0Oo0zvCPM4Q9jbKsdahzUMQaXw/formResponse';
+  const GF_NAME    = 'entry.1161092962';
+  const GF_SUBJECT = 'entry.579175530';
+  const GF_MESSAGE = 'entry.678800387'; // email prepended to body — see submission below
+
+  const cForm   = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('formSubmitBtn');
+  const btnLabel  = submitBtn.querySelector('.btn-label');
+  const btnLoad   = submitBtn.querySelector('.btn-loading');
+  const fSuccess  = document.getElementById('formSuccess');
+  const fError    = document.getElementById('formError');
+  const fErrText  = document.getElementById('formErrorText');
+
+  function validateForm(data) {
+    let ok = true;
+    ['cf-name','cf-email','cf-message'].forEach(id => {
+      const el = document.getElementById(id);
+      if (!el.value.trim()) { el.classList.add('error'); ok = false; }
+      else el.classList.remove('error');
+    });
+    const emailEl = document.getElementById('cf-email');
+    if (emailEl.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value)) {
+      emailEl.classList.add('error'); ok = false;
+    }
+    return ok;
+  }
+
+  ['cf-name','cf-email','cf-subject','cf-message'].forEach(id => {
+    const el = document.getElementById(id);
+    el.addEventListener('input', () => el.classList.remove('error'));
+  });
+
+  cForm.addEventListener('submit', async e => {
+    e.preventDefault();
+    fSuccess.hidden = true;
+    fError.hidden = true;
+
+    const name    = document.getElementById('cf-name').value.trim();
+    const email   = document.getElementById('cf-email').value.trim();
+    const subject = document.getElementById('cf-subject').value.trim();
+    const message = document.getElementById('cf-message').value.trim();
+
+    if (!validateForm({ name, email, message })) {
+      fErrText.textContent = 'Please fill in all required fields.';
+      fError.hidden = false;
+      return;
+    }
+
+    submitBtn.disabled = true;
+    btnLabel.hidden = true;
+    btnLoad.hidden = false;
+
+    const body = new URLSearchParams();
+    body.append(GF_NAME,    name);
+    body.append(GF_SUBJECT, subject);
+    body.append(GF_MESSAGE, `From: ${email}\n\n${message}`);
+
+    try {
+      await fetch(GF_URL, { method: 'POST', mode: 'no-cors', body });
+      cForm.reset();
+      fSuccess.hidden = false;
+    } catch {
+      fErrText.textContent = 'Network error. Please email me directly.';
+      fError.hidden = false;
+    } finally {
+      submitBtn.disabled = false;
+      btnLabel.hidden = false;
+      btnLoad.hidden = true;
+    }
+  });
+
+})();
+</script>
 </body>
-
 </html>
